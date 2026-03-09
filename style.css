@@ -191,23 +191,28 @@ span { color: var(--main-color); }
 .about-content p { font-size: 1.6rem; margin: 2rem 0 3rem; }
 
 /* === COMPETENZE === */
-.skills h2 { margin-bottom: 5rem; }
 .skills-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* Forza le card ad avere tutte la stessa altezza */
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .skills-box {
     flex: 1 1 30rem;
+    max-width: 35rem; /* Evita che diventino troppo larghe su schermi giganti */
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    
+    /* Layout interno per centrare i contenuti */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
 }
 
 .skills-box:hover {
@@ -215,12 +220,23 @@ span { color: var(--main-color); }
     transform: scale(1.02);
 }
 
-.skills-box i { font-size: 7rem; color: var(--main-color); margin-bottom: 1.5rem; }
-.skills-box h3 { font-size: 2.6rem; }
-.skills-box p { font-size: 1.6rem; margin: 1rem 0 3rem; }
+.skills-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.skills-box h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.skills-box p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 
 /* === PROGETTI === */
-/* === PROGETTI (Design Tipografico a Card) === */
 .portfolio { 
     background: var(--second-bg-color); /* Sfondo grigio scuro */
 }
