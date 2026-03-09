@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Plumitallo | Portfolio</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Antonio.</a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Chi Sono</a>
+            <a href="#skills">Competenze</a>
+            <a href="#portfolio">Progetti</a>
+            <a href="#contact">Contatti</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Ciao, sono</h3>
+            <h1>Antonio Plumitallo</h1>
+            <h3>E sono un aspirante <span class="multiple-text"></span></h3>
+            <p>Studio Informatica presso l'Università di Salerno. Sono appassionato di programmazione, architettura del software e amo trasformare problemi complessi in codice elegante e funzionante.</p>
+            
+            <div class="social-media">
+                <a href="https://github.com/hiroo0"><i class='bx bxl-github'></i></a>
+                <a href="#" onclick="openModal(); return false;" title="Discord"><i class='bx bxl-discord-alt'></i></a>
+                <a href="https://www.instagram.com/hirooo._/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="\images\pfp.jpg" alt="Foto Profilo">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="\images\pfp.jpg" alt="Foto Profilo" alt="About Img">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Chi <span>Sono</span></h2>
+            <h3>Aspirante Sviluppatore</h3>
+            <p>Il mio percorso è iniziato esplorando il C, per poi espandersi verso lo sviluppo web e la programmazione orientata agli oggetti con Java e C#. Nel tempo libero sono un grande appassionato di Gaming, Film e Anime. Mi piace analizzare cosa si nasconde dietro un software e capire come ottimizzarlo.</p>
+            <a href="#contact" class="btn">Parliamone</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Le Mie <span>Competenze</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Core Languages</h3>
+                <p>Esperienza solida in C, C#, e Java. Focus su algoritmi, strutture dati e programmazione orientata agli oggetti (OOP).</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-window-alt'></i>
+                <h3>Web Development</h3>
+                <p>Creazione di interfacce web responsive utilizzando HTML5, CSS3, e JavaScript per la logica di frontend.</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-data'></i>
+                <h3>Database & Tools</h3>
+                <p>Gestione dei dati tramite SQL. Utilizzo quotidiano di Git/GitHub per il versioning e la collaborazione sui progetti.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">I Miei <span>Progetti</span></h2>
+        
+        <div class="portfolio-container">
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <i class='bx bx-folder-open folder-icon'></i>
+                    <a href="https://github.com/Chris05-Gen/NC10-ISProject-StellarLibrary" target="_blank" title="Vedi su GitHub"><i class='bx bxl-github github-icon'></i></a>
+                </div>
+                <h3>Stellar Library</h3>
+                <p>Progetto universitario realizzato in team (Ingegneria del Software). Un sistema completo per la gestione, la catalogazione e l'organizzazione di una libreria digitale.</p>
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>OOP</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class='bx bx-joystick folder-icon'></i> 
+                    <a href="https://github.com/jlgionny/SyntheticSoul" target="_blank" title="Vedi su GitHub"><i class='bx bxl-github github-icon'></i></a>
+                </div>
+                <h3>Synthetic Soul <span class="wip-badge">WIP</span></h3>
+                <p>Progetto Universitario attualmente in fase di sviluppo. Sto lavorando per implementare nuove meccaniche e architetture software avanzate nel mondo videoludico.</p>
+                <div class="tech-stack">
+                    <span>C#</span>
+                    <span>Game Dev</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contatta<span>mi!</span></h2>
+        
+        <div class="contact-content">
+            <p class="contact-text">
+                Sei interessato al mio profilo o vuoi scambiare due chiacchiere su programmazione e progetti? <br>
+                Scrivimi direttamente al mio indirizzo email o trovami sui social:
+            </p>
+            
+            <div class="contact-email">
+                <a href="mailto:latuaemail@gmail.com"><i class='bx bx-envelope'></i> pluuum@libero.it</a>
+            </div>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="discord-modal" class="modal-overlay">
+        <div class="modal-box">
+            <i class='bx bx-x close-btn' onclick="closeModal()"></i>
+            <i class='bx bxl-discord-alt modal-icon'></i>
+            <h3>Aggiungimi su Discord</h3>
+            <p>Il mio username è:</p>
+            <div class="username-box">
+                <span id="discord-username">pluuum_</span>
+                <button onclick="copyDiscord()" class="copy-btn" title="Copia negli appunti"><i class='bx bx-copy'></i></button>
+            </div>
+            <span id="copy-msg" class="copy-msg">Nome copiato!</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Antonio Plumitallo | Tutti i diritti riservati.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
